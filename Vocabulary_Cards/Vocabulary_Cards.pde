@@ -1,5 +1,4 @@
-PImage[] pic = new PImage[1]; //Array; .length is "1"
-int index = 12, Diameter1=displayWidth/24, Diameter2=displayHeight/15;
+//PImage[] pic = new PImage[1]; //Array; .length is "1"
 
 void setup () {
   font = createFont("Arial-Black-48", 48);
@@ -26,4 +25,28 @@ void mousePressed() {
   if (mouseX > displayWidth*2/3 && mouseY > displayHeight*8/9) {
   exit ();
   }
+  
+ /* if () {} //1
+  
+  if () {} //2
+  
+  if () {} //3
+  
+  if () {} //4
+  
+  if () {} //5
+  
+  if () {} //6
+  
+  if () {} //7
+  
+  if () {} //8
+  
+  if () {} //9
+  
+  if () {} //10
+  
+  if () {} //11
+  
+  if () {} //12 */
 }
