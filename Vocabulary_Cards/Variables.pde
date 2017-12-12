@@ -7,5 +7,4 @@ String title = "Animal Cell Vocabulary";
 String instructions1 = "";
 
 int index = 12;
-
-color black=0;
+Boolean[] move = new Boolean[index], create = new Boolean[index], correct = new Boolean[index];
