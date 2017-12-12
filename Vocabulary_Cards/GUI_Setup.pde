@@ -50,7 +50,7 @@ void GUI_Setup () {
   rect (displayWidth*2/3, displayHeight*0, displayWidth/3, displayHeight/9); //legend title
   rect (displayWidth*2/3, displayHeight/9, displayWidth/3, displayHeight*3/9); //legend
   
-  // Buttons
+  // Markers and Buttons
   fill(255);
   rect (displayWidth*5/7, displayHeight*77/500, displayWidth/24, displayHeight/15); //1
   rect (displayWidth*5/7, displayHeight*31/125, displayWidth/24, displayHeight/15); //2
@@ -64,10 +64,9 @@ void GUI_Setup () {
   rect (displayWidth*901/1000, displayHeight*77/500, displayWidth/24, displayHeight/15); //10
   rect (displayWidth*901/1000, displayHeight*31/125, displayWidth/24, displayHeight/15); //11
   rect (displayWidth*901/1000, displayHeight*171/500, displayWidth/24, displayHeight/15); //12
- 
- fill(255, 0, 0);
+  fill(255, 0, 0);
   ellipse (displayWidth*47/64, displayHeight*6/32, displayWidth/24, displayHeight/15); // 1
-    printText (font, 48, CENTER, "1", useCalc = false, displayWidth*47/64, displayHeight*14/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "1", useCalc = false, displayWidth*47/64, displayHeight*14/66, displayWidth/24, displayHeight/15); 
   fill(0, 255, 0);
   ellipse (displayWidth*47/64, displayHeight*9/32, displayWidth/24, displayHeight/15); // 2
     printText (font, 48, CENTER, "2", useCalc = false, displayWidth*47/64, displayHeight*20/66, displayWidth/24, displayHeight/15);
@@ -82,25 +81,25 @@ void GUI_Setup () {
     printText (font, 48, CENTER, "5", useCalc = false, displayWidth*51/64, displayHeight*20/66, displayWidth/24, displayHeight/15);
   fill(255, 0, 255);
   ellipse (displayWidth*51/64, displayHeight*12/32, displayWidth/24, displayHeight/15); // 6
-    printText (font, 48, CENTER, "6", useCalc = false, displayWidth*51/64, displayHeight*26/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "6", useCalc = false, displayWidth*51/64, displayHeight*26/66, displayWidth/24, displayHeight/15); 
   fill(100, 100, 100);
   ellipse (displayWidth*55/64, displayHeight*6/32, displayWidth/24, displayHeight/15); // 7
-    printText (font, 48, CENTER, "7", useCalc = false, displayWidth*55/64, displayHeight*14/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "7", useCalc = false, displayWidth*55/64, displayHeight*14/66, displayWidth/24, displayHeight/15); 
   fill(100, 200, 50);
   ellipse (displayWidth*55/64, displayHeight*9/32, displayWidth/24, displayHeight/15); // 8
     printText (font, 48, CENTER, "8", useCalc = false, displayWidth*55/64, displayHeight*20/66, displayWidth/24, displayHeight/15);
   fill(50, 100, 200);
   ellipse (displayWidth*55/64, displayHeight*12/32, displayWidth/24, displayHeight/15); // 9
-    printText (font, 48, CENTER, "9", useCalc = false, displayWidth*55/64, displayHeight*26/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "9", useCalc = false, displayWidth*55/64, displayHeight*26/66, displayWidth/24, displayHeight/15); 
   fill(200, 50, 100);
   ellipse (displayWidth*59/64, displayHeight*6/32, displayWidth/24, displayHeight/15); // 10
-    printText (font, 48, CENTER, "10", useCalc = false, displayWidth*59/64, displayHeight*14/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "10", useCalc = false, displayWidth*59/64, displayHeight*14/66, displayWidth/24, displayHeight/15); 
   fill(70, 70, 100);
   ellipse (displayWidth*59/64, displayHeight*9/32, displayWidth/24, displayHeight/15); // 11
-    printText (font, 48, CENTER, "11", useCalc = false, displayWidth*59/64, displayHeight*20/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "11", useCalc = false, displayWidth*59/64, displayHeight*20/66, displayWidth/24, displayHeight/15); 
   fill(30, 100, 80);
   ellipse (displayWidth*59/64, displayHeight*12/32, displayWidth/24, displayHeight/15); // 12
-    printText (font, 48, CENTER, "12", useCalc = false, displayWidth*59/64, displayHeight*26/66, displayWidth/24, displayHeight/15);
+    printText (font, 48, CENTER, "12", useCalc = false, displayWidth*59/64, displayHeight*26/66, displayWidth/24, displayHeight/15); 
   
   fill (255, 0, 255);
   rect (displayWidth*2/3, displayHeight*4/9, displayWidth/3, displayHeight*5/9); // instructions
