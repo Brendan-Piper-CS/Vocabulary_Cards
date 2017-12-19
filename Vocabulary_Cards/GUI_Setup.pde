@@ -4,13 +4,35 @@ void GUI_Setup () {
   fill(255);
   rect (displayWidth*0, displayHeight*0, displayWidth*2/3, displayHeight/9);//Title
   printText (font, 48, CENTER, title, useCalc = false, displayWidth/3, displayHeight/9, displayWidth*2/3, displayHeight/9);
-  rect (displayHeight/20, displayWidth*2/25, displayWidth*11/18, displayHeight*4/9); //pic
   rect (displayHeight/20, displayWidth*17/50, displayWidth*11/18, displayHeight*7/18); //Anwser options box
+  
+   //animal cell unlabeled  .gif   Dimensions: 311x311
+   // rect (displayHeight/20, displayWidth*2/25, displayWidth*11/18, displayHeight*4/9); //pic
+  pic[0] = loadImage("animal-cell-diagram-unlabled-1.png");
+  for (int i=0; i<pic.length; i++) {
+    image(pic[i], displayHeight/20, displayWidth*2/25, displayWidth*11/18, displayHeight*4/9);
+  }
+  
+    //Anwser areas
+  noFill();// rect (displayHeight/20, displayWidth*2/25); //pic
+  stroke(5);
+  rect (displayWidth*4/25, displayHeight*13/25, displayWidth/24, displayHeight/15); // Plasma Membrane
+  rect (displayWidth*13/26, displayHeight*4/28, displayWidth/24, displayHeight/15); // Lysosome
+  rect (displayWidth*10/25, displayHeight*4/28, displayWidth/24, displayHeight/15); // Nucleus
+  rect (displayWidth*8/25, displayHeight*4/28, displayWidth/24, displayHeight/15); // Nucleous
+  rect (displayWidth*4/26, displayHeight*5/28, displayWidth/24, displayHeight/15); // Chromatin
+  rect (displayWidth*2/26, displayHeight*5/27, displayWidth/24, displayHeight/15); // Centrioles
+  rect (displayWidth*3/29, displayHeight*12/24, displayWidth/24, displayHeight/15); // Mitochondrion
+  rect (displayWidth*14/27, displayHeight*13/29, displayWidth/24, displayHeight/15); // Golgi Apparatus
+  rect (displayWidth*8/25, displayHeight*13/25, displayWidth/24, displayHeight/15); // Ribosomes
+  rect (displayWidth*14/27, displayHeight*6/28, displayWidth/24, displayHeight/15); // Smooth ER
+  rect (displayWidth*11/25, displayHeight*13/26, displayWidth/24, displayHeight/15); // Rough ER
+  rect (displayWidth*6/25, displayHeight*13/25, displayWidth/24, displayHeight/15); // Cytoplasm
   
     //Anwsers
     fill(255, 0, 0);
   rect (displayHeight*2/18, displayWidth*36/100, displayWidth*3/18, displayHeight/18); //anwser 1  
-      printText (font, 48, CENTER, "1. Cell Membrane", useCalc = false, displayHeight/4, displayWidth*38/100, displayWidth*3/18, displayHeight/18);
+      printText (font, 48, CENTER, "1. Plasma Membrane", useCalc = false, displayHeight*26/100, displayWidth*38/100, displayWidth*3/18, displayHeight/18);
     fill(0, 255, 0);
   rect (displayHeight*2/18, displayWidth*41/100, displayWidth*3/18, displayHeight/18); //anwser 2
       printText (font, 48, CENTER, "2. Lysosome", useCalc = false, displayHeight*13/50, displayWidth*24/55, displayWidth*3/18, displayHeight/18);
@@ -22,10 +44,10 @@ void GUI_Setup () {
       printText (font, 48, CENTER, "4. Nucleous", useCalc = false, displayHeight*13/50, displayWidth*27/50, displayWidth*3/18, displayHeight/18);
     fill(0, 255, 255);
   rect (displayHeight*8/18, displayWidth*36/100, displayWidth*3/18, displayHeight/18); //anwser 5
-      printText (font, 48, CENTER, "5. Nuclear Membrane", useCalc = false, displayHeight*19/32, displayWidth*19/50, displayWidth*3/18, displayHeight/18);
+      printText (font, 48, CENTER, "5. Chromotin", useCalc = false, displayHeight*19/32, displayWidth*20/52, displayWidth*3/18, displayHeight/18);
     fill(255, 0, 255);
   rect (displayHeight*8/18, displayWidth*41/100, displayWidth*3/18, displayHeight/18); //anwser 6
-      printText (font, 48, CENTER, "6. Vacoule", useCalc = false, displayHeight*19/32, displayWidth*11/25, displayWidth*3/18, displayHeight/18);
+      printText (font, 48, CENTER, "6. Centrioles", useCalc = false, displayHeight*19/32, displayWidth*11/25, displayWidth*3/18, displayHeight/18);
     fill(100, 100, 100); 
   rect (displayHeight*8/18, displayWidth*46/100, displayWidth*3/18, displayHeight/18); //anwser 7
       printText (font, 48, CENTER, "7. Mitochondrion", useCalc = false, displayHeight*19/32, displayWidth*49/100, displayWidth*3/18, displayHeight/18);
