@@ -1,13 +1,10 @@
 PImage[] pic = new PImage[1]; //Array; .length is "1"
 
 void setup () {
-  
   font = createFont("Arial-Black-48", 48);
   fullScreen();
-  GUI_Setup ();
   
-
-//Assigning Arrays
+  //Assigning Arrays
 for (int i=0; i < index; i++) {
  // println(i);
      move[i] = false;
@@ -22,11 +19,13 @@ for (int i=0; i < index; i++) {
 }
 
 void draw (){
+  //background(255);
+  GUI_Setup ();
   quitButton ();
   Collisions (indexCollisions);
 }
 
-void mousePressed() {
+void mousePressed() {  
   buttonPressed();
   answerPressed();
   
