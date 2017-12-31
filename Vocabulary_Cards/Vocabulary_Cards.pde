@@ -10,16 +10,13 @@ for (int i=0; i < index; i++) {
      move[i] = false;
      create[i] = false;
      correct[i] = false;
-     /*
-     MarkX[i] = displayWidth*47/64;
-     MarkY[i] = displayHeight*6/32;
-     */
+     answered[i] = false;
      
    }
 }
 
 void draw (){
-  //background(255);
+  background(255);
   GUI_Setup ();
   quitButton ();
   Collisions (indexCollisions);
