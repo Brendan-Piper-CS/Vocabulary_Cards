@@ -14,3 +14,9 @@ color red=#FF0303, green=#05FF03, yellow=#FEFF00;
 int[] MarkX = new int[index], MarkY = new int[index];
 
 int markerDiameterWidth = 56, markerDiameterHeight = 51;
+
+import processing.sound.*;
+int totalEffects = 3;
+SoundFile[] effect = new SoundFile[totalEffects];
+
+PImage[] pic = new PImage[1]; //Array; .length is "1"

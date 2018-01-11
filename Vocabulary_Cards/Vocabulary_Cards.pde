@@ -1,5 +1,3 @@
-PImage[] pic = new PImage[1]; //Array; .length is "1"
-
 void setup () {
   font = createFont("Arial-Black-48", 48);
   fullScreen();
@@ -13,6 +11,13 @@ for (int i=0; i < index; i++) {
      answered[i] = false;
      
    }
+
+  effect[0] = new SoundFile(this, "You_So_Zany.mp3");
+  effect[1] = new SoundFile(this, "Death_Impact_Yell_Multiple.mp3");
+  effect[2] = new SoundFile(this, "Glass_Windows_Crashing.mp3");
+  
+  effect[0].play();
+   
 }
 
 void draw (){
@@ -22,7 +27,7 @@ void draw (){
   Collisions (indexCollisions);
 }
 
-void mousePressed() {  
+void mousePressed() {
   buttonPressed();
   answerPressed();
   
