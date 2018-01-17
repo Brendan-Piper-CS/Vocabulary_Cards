@@ -15,7 +15,7 @@ void GUI_Setup () {
   }
   
   
-    //Anwser areas
+    //Anwser areas on the diagram
   noFill();// rect (displayHeight/20, displayWidth*2/25); //pic
   stroke(5);
   rect (displayWidth*4/25, displayHeight*13/25, markerDiameterWidth, markerDiameterHeight); // Plasma Membrane
@@ -33,8 +33,7 @@ void GUI_Setup () {
   
   
     //Anwsers
-    
-    fill(255, 0, 0);
+       fill(255, 0, 0);
   rect (displayHeight*2/18, displayWidth*36/100, displayWidth*3/18, displayHeight/18); //anwser 1  
       printText (font, 48, CENTER, "1. Plasma Membrane", useCalc = false, displayHeight*26/100, displayWidth*38/100, displayWidth*3/18, displayHeight/18);
     fill(0, 255, 0);
@@ -93,7 +92,7 @@ void GUI_Setup () {
   rect (displayWidth*901/1000, displayHeight*31/125, markerDiameterWidth, markerDiameterHeight); //11
   rect (displayWidth*901/1000, displayHeight*171/500, markerDiameterWidth, markerDiameterHeight); //12
   
- 
+   //Column 1
  fill(255, 0, 0);
   ellipse (displayWidth*47/64, displayHeight*6/32, markerDiameterWidth, markerDiameterHeight); // 1
     printText (font, 48, CENTER, "1", useCalc = false, displayWidth*47/64, displayHeight*14/66, markerDiameterWidth, markerDiameterHeight);
@@ -104,7 +103,7 @@ void GUI_Setup () {
   ellipse (displayWidth*47/64, displayHeight*12/32, markerDiameterWidth, markerDiameterHeight); // 3
     printText (font, 48, CENTER, "3", useCalc = false, displayWidth*47/64, displayHeight*26/66, markerDiameterWidth, markerDiameterHeight);
     
-    
+    //Column 2
   fill(255, 255, 0);
   ellipse (displayWidth*51/64, displayHeight*6/32, markerDiameterWidth, markerDiameterHeight); // 4
     printText (font, 48, CENTER, "4", useCalc = false, displayWidth*51/64, displayHeight*14/66, markerDiameterWidth, markerDiameterHeight);
@@ -115,7 +114,7 @@ void GUI_Setup () {
   ellipse (displayWidth*51/64, displayHeight*12/32, markerDiameterWidth, markerDiameterHeight); // 6
     printText (font, 48, CENTER, "6", useCalc = false, displayWidth*51/64, displayHeight*26/66, markerDiameterWidth, markerDiameterHeight);
     
-    
+    //Column 3
   fill(100, 100, 100);
   ellipse (displayWidth*55/64, displayHeight*6/32, markerDiameterWidth, markerDiameterHeight); // 7
     printText (font, 48, CENTER, "7", useCalc = false, displayWidth*55/64, displayHeight*14/66, markerDiameterWidth, markerDiameterHeight);
@@ -126,7 +125,7 @@ void GUI_Setup () {
   ellipse (displayWidth*55/64, displayHeight*12/32, markerDiameterWidth, markerDiameterHeight); // 9
     printText (font, 48, CENTER, "9", useCalc = false, displayWidth*55/64, displayHeight*26/66, markerDiameterWidth, markerDiameterHeight);
     
-    
+    //Column 4
   fill(200, 50, 100);
   ellipse (displayWidth*59/64, displayHeight*6/32, markerDiameterWidth, markerDiameterHeight); // 10
     printText (font, 48, CENTER, "10", useCalc = false, displayWidth*59/64, displayHeight*14/66, markerDiameterWidth, markerDiameterHeight);
@@ -137,8 +136,17 @@ void GUI_Setup () {
   ellipse (displayWidth*59/64, displayHeight*12/32, markerDiameterWidth, markerDiameterHeight); // 12
     printText (font, 48, CENTER, "12", useCalc = false, displayWidth*59/64, displayHeight*26/66, markerDiameterWidth, markerDiameterHeight);
   
-  fill (255, 0, 255);
-  rect (displayWidth*2/3, displayHeight*4/9, displayWidth/3, displayHeight*5/9); // instructions
-  //printText (font, 48, CENTER, instructions1, useCalc = false, displayWidth*2/3, displayHeight*4/9, displayWidth/3, displayHeight*5/9);
+  
+  //Instructions
+  rect (displayWidth*2/3, displayHeight*4/9, displayWidth/3, displayHeight*5/9);
+  printText (font, 48, CENTER, instructions, useCalc = false, displayWidth*46/5/11, displayHeight*7/13, displayWidth/3, displayHeight*5/9);
+  printText (font, 48, CENTER, instructions1, useCalc = false, displayWidth*46/5/11, displayHeight*8/13, displayWidth/3, displayHeight*5/9);
+  
+  printText (font, 48, CENTER, instructions2, useCalc = false, displayWidth*81/100, displayHeight*9/13, displayWidth/3, displayHeight*5/9);
+  fill(green);
+  text("green.", displayWidth*100/102, displayHeight*9/13);
+  fill(255);
+  
+  printText (font, 48, CENTER, instructions3, useCalc = false, displayWidth*46/5/11, displayHeight*10/13, displayWidth/3, displayHeight*5/9);
   fill(255);
 }

@@ -3,8 +3,12 @@ float fontFit = displayWidth + displayHeight;
 Boolean useCalc;
 
 String Quit = "Exit Program";
+
 String title = "Animal Cell Vocabulary";
-String instructions1 = "";
+String instructions = "Instructions";
+String instructions1 = "Match the buttons with the corresponding anwser on the diagram.";
+String instructions2 = "If you are correct then the button will turn";
+String instructions3 = "If you are wrong the button will stay selected and nothing will happen.";
 
 int index = 12;
 int indexCollisions;

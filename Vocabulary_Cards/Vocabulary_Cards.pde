@@ -1,7 +1,9 @@
+//Author: Brendan Piper
+
 void setup () {
-  font = createFont("Arial-Black-48", 48);
+  font = createFont("Arial-Black-70.vlw", 70);
   fullScreen();
-  
+
   //Assigning Arrays
 for (int i=0; i < index; i++) {
  // println(i);
@@ -12,6 +14,7 @@ for (int i=0; i < index; i++) {
      
    }
 
+  //Assigning Effects
   effect[0] = new SoundFile(this, "You_So_Zany.mp3");
   effect[1] = new SoundFile(this, "Death_Impact_Yell_Multiple.mp3");
   effect[2] = new SoundFile(this, "Glass_Windows_Crashing.mp3");
